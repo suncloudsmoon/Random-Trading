@@ -28,4 +28,20 @@ class Rand_Trader {
 
 	}
 
+	public String rand_next_12 = "";
+
+	public String logging_business() {
+		String[] alphabet_1 = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q",
+				"r", "s", "t", "u", "v", "w", "x", "y", "z" };
+
+		for (int i = 0; i < 4; i++) {
+			int pure_randomness_12 = (int) (Math.random() * 25);
+			rand_next_12 = rand_next_12 + alphabet_1[pure_randomness_12];
+		}
+		rand_next_12 = rand_next_12 + " logging";
+
+		return rand_next_12;
+
+	}
+
 }

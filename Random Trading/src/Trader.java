@@ -6,7 +6,7 @@
 class Trader {
 	public String name;
 	public static String rand_name;
-	public static String mood;
+	public static String mood; // also for logs
 	public static int experience;
 	private static int mood_rating_stars = 0;
 
@@ -18,10 +18,11 @@ class Trader {
 
 	}
 
-	static void trading_experience() {
+	public static void trading_experience() {
 		String experience_definition = null;
 		int random_experience = (int) (Math.random() * 10);
-		experience = random_experience;
+		experience = random_experience; // sets mood_rating_stars to years of experience!
+
 		if (random_experience <= 2) {
 			experience_definition = "Fundamental Awareness";
 		} else if (random_experience <= 4) {
@@ -89,5 +90,23 @@ class Trader {
 
 		System.out.println(
 				'"' + "Trader " + name + " was " + mood.toLowerCase() + " while I was trying to trade with him!" + '"');
+	}
+
+	public static String businesstype() {
+
+		String business;
+		int business_structure = (int) (Math.random() * 2) - 1;
+
+		if (business_structure == 0) {
+			business = "inc.";
+		} else {
+			business = "LLC";
+		}
+		return business;
+	}
+
+	public static int amountoflogs() {
+		int logs = (int) (Math.random() * 4) + 45;
+		return logs;
 	}
 }
