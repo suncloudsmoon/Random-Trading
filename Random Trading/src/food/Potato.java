@@ -1,12 +1,12 @@
-// This is where the (trader type: farmer) -- default, will trade for dollars!
-// basic trading == potatoes for dollars
+package food;
 
-class Potato {
+
+public class Potato {
 	String poisionious_potatoes;
 	int num_potatoes = (int) (Math.random() * 100);
-	double potato_price_per_kg = 1;
+	public double potato_price_per_kg = 1;
 
-	void sell_potatoes() {
+	public void sell_potatoes() {
 		System.out.println("Trader has " + num_potatoes + " potatoes!");
 		System.out.println("They cost a total of $" + potato_price_per_kg + " per kg!");
 	}

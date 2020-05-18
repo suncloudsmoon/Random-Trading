@@ -1,16 +1,17 @@
+package trader;
 // This is where I will define the trader's persona (character: angry or happy for bargaining or negotiating), experience (changes over gameplay?), name
 // basic portfolio of a trader; gives the customer a basic intro
 // Find a way to save trader's portfolio!
 // more experience = better trading?
 
-class Trader {
+public class Trader {
 	public String name;
 	public static String rand_name;
 	public static String mood; // also for logs
 	public static int experience;
 	private static int mood_rating_stars = 0;
 
-	void introduce_name() {
+	public void introduce_name() {
 		String[] planets = { "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune" };
 		int planet_rand = (int) (Math.random() * 7);
 		System.out.println("Hi, my name is " + name + " and I am from " + planets[planet_rand] + '!');
@@ -38,14 +39,14 @@ class Trader {
 		System.out.println("Experience: " + +random_experience + " years " + "(" + experience_definition + ")");
 	}
 
-	String mood_for_trading() {
+	public String mood_for_trading() {
 		String[] random_mood = { "Angry", "Disgusted", "Fearful", "Happy", "Sad", "Suprised" };
 		int random_mood_1 = (int) (Math.random() * 5);
 		String random_mood_display = random_mood[random_mood_1];
 		return random_mood_display;
 	}
 
-	static void trader_rating() {
+	public static void trader_rating() {
 
 		if (mood.equals("Happy")) {
 			mood_rating_stars = 5;
@@ -72,7 +73,7 @@ class Trader {
 		}
 	}
 
-	void newest_review() {
+	public void newest_review() {
 
 		String[] months = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Aug", "Sep", "Oct", "Nov", "Dec" };
 

@@ -1,4 +1,5 @@
-class Rand_Trader {
+package trader;
+public class Rand_Trader_Name {
 
 	public static String user() {
 		String[] alphabet = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r",

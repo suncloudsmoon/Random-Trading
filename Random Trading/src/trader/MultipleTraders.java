@@ -1,4 +1,5 @@
-class MultipleTraders {
+package trader;
+public class MultipleTraders {
 	public static int counter = 0;
 	public static String[] new_trader = new String[5];
 	private static String rand_next;
