@@ -11,3 +11,5 @@ Structure of this Java program:
 - Food_Trading.java: In this file, all food items that the trader has will be declared here
 - Buying.java: In this file, all initial values for food and the amount of cash in the customer's wallet and the trader's cashbox will
 be displayed here!
+
+Note: the nickname "Popeye the sailor man" is the same user as suncloudsmoon!
